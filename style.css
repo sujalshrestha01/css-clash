@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(244, 246, 255, 0.64);
+    max-width: 99%;
+  
+}
+.header{
+    max-width:100%;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px;
+    margin-top: 16px;
+    margin-left: 72px;
+    margin-right: 40px; */
+    left:4.5%;
+    border-radius: 16px;
+    background: rgba(244, 246, 255, 0.64);
+    backdrop-filter: blur(5px);
+    margin-bottom: 100px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+   z-index: 2;
+}
+nav img{
+    width: 217px;
+    height:48px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 4px 12px;
+    position:relative;
+    font: bolder;
+}
+nav ul li a{
+    color: #25212B;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav ul li :hover{
+    color:#ab00fa;
+
+}
+nav ul li:hover{
+    transform: scale(120%);
+}
+
+/* -----------text-box--------- */
+.text-box {
+    align-items: center;
+   padding-top:100px ;
+    margin: auto;
+}
+.text-box .first-par{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+    text-transform: uppercase;
+}
+.first-par{
+    background: var(--linear-garadient, linear-gradient(177deg, #2B59FF 23.11%, #BB2BFF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+    
+}
+.l-2023{
+    background: var(--linear-garadient, linear-gradient(177deg, #2B59FF 23.11%, #BB2BFF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.elevate-your{
+    color: #1f0074;
+    font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.elevate-your,.code-game{
+    font-size: 40px;
+}
+.code-game{
+    color: #A034FF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+        line-height: normal;
+
+}
+.second-par{
+    text-align: center;
+    color: #514D55;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
+  
+}
+.text-box a{
+    display: flex;
+    
+   
+    margin: 0px auto 100px;
+    max-width: 150px;
+    height: 56px;   
+    padding: 16px 32px 17px 32px;
+    border-radius: 16px;
+    background: linear-gradient(131deg, #2B59FF 0%, #BB2BFF 100%);
+    transition: 1s;
+     text-decoration: none;
+     color: white;  
+    justify-content: center;
+    align-items: center;
+   
+   
+
+}
+
+ .text-box a:hover{
+    box-shadow: 0px 8px 16px -4px rgba(17, 52, 179, 0.40);
+    background: linear-gradient(131deg,  #BB2BFF 0%,#2B59FF 100%);
+   font-size: 20px;
+}
+/* --------lets-talk -----*/
+
+.lets-talk{
+    display: flex;
+    max-width: 110px;
+    padding: 13px 15px 15px 15px;
+    align-items: center;
+    gap: 3px;
+    border-radius: 25px;
+    color: white;
+    background: #2E4FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    
+}
+.scroll-up{
+   
+    border-radius: 50%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+.scroll-up img{
+    background-color: white;
+   
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.scroll-up img:hover{
+    background-color: #2e4dffb9;
+    
+    
+}
+
+
+/* why join the challenge */
+/* .why-join{
+    max-width: 100%;
+} */
+
+.why-join h1{
+    color: #1E0074;
+   
+    margin-inline:auto;
+text-align: center;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; /* 62.5px */
+letter-spacing: 0.25px;
+text-transform: capitalize;
+}
+.row{
+    display: flex;
+    max-width: 90%;
+    margin-inline:auto;
+    flex-direction: row;
+    justify-content: center;
+   gap: 40px;
+    align-items: center;
+
+}
+.col-join{
+   flex-basis: 22.5%;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.09);
+    padding: 30px 10px; 
+    margin-bottom: 50px;
+}
+.col-join img{
+  width: 60px;
+  height: 60px;
+}
+.inner .inner-header{
+    margin: 10%;
+    color:black ;
+    text-align: center;
+    font-weight: bolder;
+}
+.inner p{
+    text-align: center;
+    color: black;
+}
+/* ------road-victory */
+.road-victory{
+    max-width:90vw;
+    padding: 30px 20px;
+    margin-inline: auto;
+    background: linear-gradient(131deg, #2B59FF 0%, #BB2BFF 100%);
+}
+.road-victory h1{
+    text-align: center;
+   font-size: 50px;
+   color: #FFF;
+text-align: center;
+
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%; 
+letter-spacing: 0.25px;
+text-transform: capitalize;
+}
+.road-victory .road-par{
+   
+    margin: 20px auto;
+    color: #FFF;
+text-align: center;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px; /* 161.111% */
+}
+
+.step{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.step .inner-step{
+flex-basis: 30%;
+
+}
+.step .inner-step img,.inner-step p,.inner-step h3{
+    color: white;
+    
+}
+.inner-step h3,.inner-step img{
+    margin: 10px 0px;
+    text-align: left;
+}
+
+
+/* -----collab partners------ */
+.collab{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.collab h2{
+    color: rgba(30, 0, 116, 0.60);
+text-align: center;
+
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 120% */
+text-transform: uppercase;
+}
+.partners img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+/* -----challenge matter------ */
+.ch-matter{
+    background: linear-gradient(131deg, #2B59FF 0%, #BB2BFF 100%);
+    max-width: 90%;
+    margin: auto;
+    border-radius: 40px;
+    padding: 40px 5px 40px 30px;
+
+}
+.ch-matter h1{
+    font-size: 50px;
+    color: white;
+    margin: 40px;
+    text-align: center;
+}
+.ch-col{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.ch-col img{
+    width: 450px;
+    height: 420px;
+    border-radius: 50px;
+}
+.one-flex{
+    display: flex;
+    gap: 20px;
+}
+.circle-one{
+    min-width: 80px;
+    height: 80px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ch-col .text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.text-one h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom:10px ;
+}
+.text-one p{
+    font-size: 20px;
+}
+
+/* ------what to expect--------- */
+.expect{
+    margin-top: 100px;
+    max-width:90%;
+    margin-inline: auto;
+  
+}
+.expect h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.expect-flex{
+    display: flex;
+  align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.expect-flex h3,.expect-flex p{
+    color: black;
+}
+.expect-flex .content{
+    flex-basis: 31.5%;
+    padding: 26px;
+    border: 2px solid black;
+    border-radius: 28px;  
+}
+/* --------accept challenge------------- */
+.accept-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    max-width: 90vw;
+    margin: auto;
+    margin-top:50px;
+    padding: 57px 20px 73px 98px;
+    border-radius: 40px;
+background:  linear-gradient(263deg, #1E0074 0%, #A532FF 100%);
+
+}
+.accept-inner{
+    flex-basis: 70%;
+}
+
+.accept-inner h1{
+    font-size: 30px;
+  
+}
+.accept-inner p{
+    font-size: 18px;
+}
+.accept-container a{
+    color: white;
+    background: linear-gradient(131deg, #2B59FF 0%, #BB2BFF 100%);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 16px 32px 17px;
+    position: relative;
+    box-shadow: 0 0 7px  white;
+    border-radius: 20px;
+}
+
+
+/* ---------footer------------ */
+.upper{
+    max-width: 90%;
+    margin:50px auto;
+    color: white;
+    background: #1E0074;
+    border-radius: 20px;
+    padding: 40px 0px 30px 45px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;  
+    gap:20px 50px;
+  
+  
+}
+.upper .one,.upper .four{
+    flex-basis: 20%;
+}
+.upper .two,.upper .three, .upper .five{
+    flex-basis: 34%;
+}
+.upper .one img,.upper .one p{
+    margin-bottom: 10px;
+}
+.upper .two{
+
+    max-width: 100%;
+}
+.upper .two span{
+    line-height: 25px;
+    padding:  10px;
+    white-space: nowrap;
+}
+.upper .two span:hover,.upper .five img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 12px white;
+    border-radius: 10%;
+}
+.upper .three h2, .upper .three p{
+    margin: 0px 0px 20px;
+}
+.upper .five img{
+    padding: 10px 12px;
+}
+.upper .three input[type="button"]{
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 5px 3px white;
+    background-color: transparent;
+    color:white;
+    margin-left: 10px;
+}
+.upper .three input[type="button"]:hover{
+    cursor: pointer;
+    box-shadow: 0 0 7px 4px white;
+   
+   
+}
+
+.upper .three input[type="email"]
+{
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+}
+
+
+/* -----------responsive design----------------- */
+/* ---992 to 1190---- */
+@media  screen and (max-width:1200px){
+    .upper .one,.upper .four{
+    flex-basis: 15%;
+    }
+    .upper .three input[type="button"]{
+        margin: 20px auto;
+    }
+    .expect-flex .content{
+        flex-basis: 40%;
+    } 
+}
+@media screen and (max-width:992px){
+    .text-box .first-par ,.l-2023{
+        font-size: 30px;
+    }
+    .elevate-your,.code-game{
+    font-size: 25px;
+    }
+    .step .inner-step {
+        flex-basis: 29%;
+    }
+    .ch-matter h1{
+        font-size: 35px;
+    }
+    .ch-col{
+        flex-direction: column;
+    }
+    .ch-col img{
+       display: flex;
+       align-self: center;
+       width: 300px;
+       height: 300px;
+    }
+    .upper .two, .upper .three, .upper .five{
+        flex-basis: 30%;
+    }
+    nav img{
+        width: 150px;
+    }
+    nav .nav-links{
+        display: none;
+    }
+   
+
+}
+@media screen and (max-width:768px) {
+
+    .why-join h1{
+        font-size: 30px;
+    }
+    .text-box .first-par{
+        font-size: 25px;
+    }
+    .elevate-your,.code-game{
+    font-size: 20px;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .col-join{
+        flex-basis: 40%;
+        padding: 30px 2px;
+    }
+    .step .inner-step{
+        flex-basis: 44%;
+    }
+    .collab h2{
+        font-size: 20px;
+    }
+    .partners img{
+        height: 100px;
+        width: 100px;
+    }
+    .upper .foot{
+        flex-basis: 40%;
+    }
+    .upper .three{
+        order: 5;
+        flex-basis: 80%;
+    }
+    .road-victory h1{
+        font-size: 40px;
+    }
+    .ch-col img{
+        display: none;
+    }
+    
+}
+/* --------------  600px  ----------------- */
+
+@media screen and (max-width:600px) {
+    .accept-container{
+        padding: 20px 20px 20px 30px;
+    }
+    .accept-inner h1{
+        font-size: 20px;
+    }
+   .ch-matter h1{
+    font-size: 25px;
+   }
+    .text-one h4{
+        font-size: 18px;
+    }
+    .text-one p{
+        font-size: 18px;
+    }
+    .accept-container a{
+        padding: 10px 15px;
+    }
+    .accept-container{
+        flex-direction: column;
+    }
+}
+/* ----------    500px   ---------------------- */
+
+@media screen and (max-width:500px) {
+    .row{
+        gap: 20px;
+        /* flex-direction: column; */
+    
+    }
+    .row .col-join{
+        flex-basis: 80%;
+    }
+    .step{
+        gap: 25px;
+        flex-direction: column;
+    }
+    .step .inner-step{
+        flex-basis: 45%;
+    }
+    .circle-one{
+        min-width: 40px;
+        height: 40px;
+    }
+    .why-join h1{
+        font-size: 25px;
+
+    }
+    .road-victory h1{
+        font-size: 25px;
+    }
+    .expect-flex .content{
+        flex-basis: 80%;
+    }
+    .expect h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
